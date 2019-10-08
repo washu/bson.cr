@@ -1,6 +1,6 @@
 # bson
 
-TODO: Write a description here
+LibBSON wrapper for Crystal
 
 ## Installation
 
@@ -9,7 +9,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      bson:
-       github: your-github-user/bson
+       github: washu/bson.cr
    ```
 
 2. Run `shards install`
@@ -20,15 +20,25 @@ TODO: Write a description here
 require "bson"
 ```
 
-TODO: Write usage instructions here
+
+example creation of a bson document
+```crystal
+
+query = [
+    {"$match" => {"status" => "A"}},
+    {"$group" => {"_id" => "$cust_id", "total" => {"$sum" => "$amount"}}}]
+bson_query = query.to_bson
+```
+
+....
+you now have a valid bson object to use.
 
 ## Development
 
-TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/bson/fork>)
+1. Fork it (<https://github.com/washu/bson.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -36,4 +46,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Sal Scotto](https://github.com/your-github-user) - creator and maintainer
+- [Sal Scotto](https://github.com/washu) - creator and maintainer
