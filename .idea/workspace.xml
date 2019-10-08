@@ -24,23 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249e297f-8e41-49a3-b2c3-f3db298097ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bson/array_appender.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/binary.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/bson_error.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/code.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/core_ext/array.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/core_ext/hash.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/core_ext/nil.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/iter.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/lib_bson.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/max_key.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/min_key.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/object_id.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/symbol.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/timestamp.cr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bson/value.cr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/bson_spec.cr" beforeDir="false" afterPath="$PROJECT_DIR$/spec/bson_spec.cr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bson.cr" beforeDir="false" afterPath="$PROJECT_DIR$/src/bson.cr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shard.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shard.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
@@ -110,7 +95,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570553980597</updated>
-      <workItem from="1570553981710" duration="1790000" />
+      <workItem from="1570553981710" duration="1866000" />
     </task>
     <servers />
   </component>
