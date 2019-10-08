@@ -1,6 +1,6 @@
 name: bson
 version: 0.1.0
-
+description: LibBSON wrapper fro Crystal
 authors:
   - Sal Scotto <sal.scotto@gmail.com>
   - Jerome Gravel-Niquet <jeromegn@gmail.com>
