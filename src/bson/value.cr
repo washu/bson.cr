@@ -6,11 +6,7 @@ class Regex
             json.field("$regularExpression") do
                 json.object do
                     json.field "pattern",source
-                     io = ""
-                     io << "i" if options.ignore_case?
-                     io << "m" if options.multiline?
-                     io << "x" if options.extended?
-                    json.field "options",io.to_s
+                    json.field "options",options.to_s
                 end
             end
         end
@@ -30,30 +26,6 @@ struct Time
     end
   end
 end
-
-struct Float64
-  def to_json(json : JSON::Builder)
-    json.object do
-        json.object do
-            json.field "$numberDecimal" do
-                json.string self
-            end
-        end
-    end
-  end
-end
-struct Int64
-  def to_json(json : JSON::Builder)
-    json.object do
-        json.object do
-            json.field "$numberLong" do
-                json.string self
-            end
-        end
-    end
-  end
-end
-
 
 class BSON
   alias ValueType = BSON | Binary | Code | MaxKey | MinKey | ObjectId | Symbol | Timestamp | Bool | Float64 | Int32 | Int64 | Regex | String | Time | Nil
@@ -90,7 +62,7 @@ class BSON
         else
           raise "Deprecated binary types should not be used"
         end
-        Binary.new(subtype, bytes)
+        Binary.new(subtype, bytes)	  
       when LibBSON::Type::BSON_TYPE_EOD
         nil
       when LibBSON::Type::BSON_TYPE_DOUBLE

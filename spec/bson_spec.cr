@@ -292,6 +292,7 @@ describe BSON do
     bson = BSON.new
     bson["x"] = 42
     bson["body"] = "content"
+
     copy = bson.clone
     copy.should eq(bson)
   end
@@ -336,11 +337,11 @@ describe BSON do
     ary["0"].should eq(1)
   end
 
-  it "should decode json in canonical form" do
+  it "should decode json" do
     s = "{ \"sval\" : \"1234\", \"ival\" : 1234 }"
-    cs = "{ \"sval\" : \"1234\", \"ival\" : 1234 }"
+    can = "{ \"sval\" : \"1234\", \"ival\" : { \"$numberInt\" : \"1234\" } }"
     bson = BSON.from_json s
-    bson.to_s.should eq cs
+    bson.to_s.should eq can
   end
 
   it "should be able to read binary data" do

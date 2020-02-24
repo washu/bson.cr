@@ -7,6 +7,7 @@
     <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
     <option name="INSPECTIONS_BUILD_TYPE_IDS" />
     <option name="DUPLICATES_BUILD_TYPE_IDS" />
+    <option name="ENABLE_SUITABLE_CONFIGURATION_CACHING" value="true" />
     <option name="COVERAGE_SETTINGS" />
     <option name="TEST_STATUS_ENABLED" value="true" />
     <option name="TEST_STATUS_SHOW_SUCCESSFUL" value="false" />
@@ -21,13 +22,16 @@
     <option name="SHOW_CLOSE_PROMPT" value="true" />
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <option name="showStatusBarWidget" value="true" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249e297f-8e41-49a3-b2c3-f3db298097ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/bson_spec.cr" beforeDir="false" afterPath="$PROJECT_DIR$/spec/bson_spec.cr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bson.cr" beforeDir="false" afterPath="$PROJECT_DIR$/src/bson.cr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bson/lib_bson.cr" beforeDir="false" afterPath="$PROJECT_DIR$/src/bson/lib_bson.cr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bson/value.cr" beforeDir="false" afterPath="$PROJECT_DIR$/src/bson/value.cr" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,13 +57,18 @@
     </option>
   </component>
   <component name="ProjectId" id="1RviTq3lRybU2HFutTHYdTqJwtr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spec" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -73,22 +82,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spec" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
-  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="false" RAILS_SPRING_PRE_LOADER_OPTION="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="249e297f-8e41-49a3-b2c3-f3db298097ac" name="Default Changelist" comment="" />
@@ -96,8 +107,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570553980597</updated>
-      <workItem from="1570553981710" duration="2246000" />
+      <workItem from="1570553981710" duration="2357000" />
+      <workItem from="1582567991356" duration="827000" />
     </task>
+    <task id="LOCAL-00001" summary="updated readme">
+      <created>1570556350444</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570556350444</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,10 +128,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated readme" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="268" width="1642" height="945" key="DiffContextDialog" timestamp="1582569218200">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="549" y="268" width="1642" height="945" key="DiffContextDialog/-3840.486.3840.2137/2560.474.3840.2137/0.23.2560.1337@0.23.2560.1337" timestamp="1582569218200" />
+    <state x="1266" y="470" key="VcsDiffUtil.ChangesDialog" timestamp="1582569029396">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1266" y="470" key="VcsDiffUtil.ChangesDialog/-3840.486.3840.2137/2560.474.3840.2137/0.23.2560.1337@0.23.2560.1337" timestamp="1582569029396" />
   </component>
 </project>

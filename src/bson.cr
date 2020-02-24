@@ -70,13 +70,6 @@ class BSON
   end
 
   def to_json
-    cstr = LibBSON.bson_as_extended_json(handle, out length)
-    ret = String.new(cstr, length)
-    LibBSON.bson_free(cstr.as(Void*))
-    ret
-  end
-
-  def to_relaxed_json
     cstr = LibBSON.bson_as_json(handle, out length)
     ret = String.new(cstr, length)
     LibBSON.bson_free(cstr.as(Void*))
@@ -302,7 +295,7 @@ class BSON
   end
 
   def to_s(io)
-    io << to_relaxed_json
+    io << to_json
   end
 
   def inspect(io)
